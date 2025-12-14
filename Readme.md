@@ -2,7 +2,6 @@
 
 [![ROS2](https://img.shields.io/badge/ROS2-Jazzy-blue.svg)](https://docs.ros.org/en/jazzy/)
 [![Python](https://img.shields.io/badge/Python-3.12-green.svg)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-Apache%202.0-orange.svg)](LICENSE)
 
 An autonomous beer pong throwing system powered by a Kinova Gen3 Lite collaborative robotic arm. This project demonstrates precision throwing mechanics using ROS2, MoveIt2, and advanced motion planning to hit target cups in a traditional beer pong formation.
 
@@ -258,13 +257,6 @@ The gripper logic is hardware-inverted:
 
 This is a research/educational project. Feel free to fork and experiment with different throwing strategies, trajectory optimizations, or vision-based targeting systems.
 
-## License
-
-Apache License 2.0
-
-## Version
-
-**v0.0.0** - Active development
 
 ## Acknowledgments
 
