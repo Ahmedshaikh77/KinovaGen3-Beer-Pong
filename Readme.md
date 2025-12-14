@@ -7,8 +7,9 @@
 An autonomous beer pong throwing system powered by a Kinova Gen3 Lite collaborative robotic arm. This project demonstrates precision throwing mechanics using ROS2, MoveIt2, and advanced motion planning to hit target cups in a traditional beer pong formation.
 
 <p align="center">
-  <img src="docs/Robot in Wind-Up Pose Before the Throw.jpeg" alt="Robot in Wind-Up Pose" width="400"/>
-  <img src="docs/Ball in Mid-Air During the Throw.jpeg" alt="Ball in Mid-Air" width="400"/>
+  <video src="docs/Kinova Gen3 Lite Beer Pong Demo.mp4" width="800" controls>
+    Your browser does not support the video tag.
+  </video>
 </p>
 
 ## Overview
@@ -203,8 +204,25 @@ ros2 run beer_pong gripper_node
 | [beer_pong_throwall.py](ros2_ws/src/beer_pong/beer_pong/beer_pong_throwall.py) | Multi-cup sequential throws | 484 |
 | [direct_gripper_throw.py](ros2_ws/src/beer_pong/beer_pong/direct_gripper_throw.py) | Alternative gripper action client | 296 |
 | [gripper_node.py](ros2_ws/src/beer_pong/beer_pong/gripper_node.py) | Standalone gripper control | 102 |
-| [joint_limits.yaml](ros2_ws/src/beer_pong/beer_pong/joint_limits.yaml) | Robot joint constraints | - |
+| [joint_limits.yaml](ros2_ws/src/beer_pong/beer_pong/joint_limits.yaml) | Robot joint constraints | 67 |
 | [Hold_My_Beer.md](ros2_ws/src/beer_pong/beer_pong/Hold_My_Beer.md) | Quick reference guide | - |
+
+### Joint Limits Configuration
+**File:** [joint_limits.yaml](ros2_ws/src/beer_pong/beer_pong/joint_limits.yaml)
+
+This YAML file configures the robot's motion dynamics and constraints:
+
+**Velocity and Acceleration Scaling:**
+- `default_velocity_scaling_factor: 1.0` - Maximum speed (100%)
+- `default_acceleration_scaling_factor: 1.0` - Maximum acceleration (100%)
+
+**Joint Limits (all 6 joints + gripper):**
+- Max velocity: 3.5 rad/s (joints 1-6), 5.0 rad/s (gripper fingers)
+- Max acceleration: 5.0 rad/s² (all joints)
+- Joint 3 position limits: -2.65 to 2.66 radians
+- Gripper joints have effort limits enabled
+
+This configuration ensures safe operation while allowing maximum performance for the throwing motion.
 
 ## Dependencies
 
