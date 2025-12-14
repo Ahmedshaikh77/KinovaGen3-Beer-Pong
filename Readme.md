@@ -1,6 +1,6 @@
 # KinovaGen3 Beer Pong Robot
 
-[![ROS2](https://img.shields.io/badge/ROS2-Humble-blue.svg)](https://docs.ros.org/en/humble/)
+[![ROS2](https://img.shields.io/badge/ROS2-Jazzy-blue.svg)](https://docs.ros.org/en/jazzy/)
 [![Python](https://img.shields.io/badge/Python-3.12-green.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-orange.svg)](LICENSE)
 
@@ -93,7 +93,7 @@ KinovaGen3-Beer-Pong/
 ## Installation
 
 ### Prerequisites
-- ROS2 (Humble or later)
+- ROS2 (Jazzy)
 - MoveIt2
 - Kinova Gen3 Lite robot with ROS2 drivers
 - Python 3.12+
