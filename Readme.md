@@ -7,9 +7,11 @@
 An autonomous beer pong throwing system powered by a Kinova Gen3 Lite collaborative robotic arm. This project demonstrates precision throwing mechanics using ROS2, MoveIt2, and advanced motion planning to hit target cups in a traditional beer pong formation.
 
 <p align="center">
-  <video src="docs/Kinova Gen3 Lite Beer Pong Demo.mp4" width="800" controls>
-    Your browser does not support the video tag.
-  </video>
+  <a href="docs/Kinova%20Gen3%20Lite%20Beer%20Pong%20Demo.mp4">
+    <img src="docs/Robot in Wind-Up Pose Before the Throw.jpeg" alt="Click to watch demo video" width="800"/>
+  </a>
+  <br>
+  <em>Click image to watch demo video</em>
 </p>
 
 ## Overview
